@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style type="text/css">
+    .card-box:hover {
+
+        transform: scale(1.05);
+    }
+    .card-text{
+        color:rgb(241, 250, 238);font-family: Josefin sans,sans-serif;font-weight: 400;font-size: 1.25em;
+    }
+	.black{
+	background-color:#352786;
+	margin:0;
+	padding :0;
+	}
+	.hh{
+		position : absolute;
+		top: 50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		margin:0;
+		padding:0;
+		display:-webkit-flex;
+		display:-moz-flex;
+		display:-ms-flex;
+		display:-o-flex;
+		display:flex;
+	}
+	.faza{
+	list-style-type:none;
+	color:#484848;
+	font-family:fantasy;
+	font-size:5em;
+	letter-spacing:15px;
+	animation:animate 1.5s linear infinite;
+	}
+	@keyframes animate{
+		0%{
+			color:#000000; 
+			text-shadow:none;
+			
+		}
+		90%{
+			color:#00000;
+			text-shadow:none;
+		}
+		100%{
+			color:#ff5b5b;
+			text-shadow:0 0 7px #ff5b5b, 0 0 50px #ff5b5b;
+		}
+		
+	}
+	.faza:nth-child(1){
+		animation-delay:0.2s;
+		
+	}
+	.faza:nth-child(2){
+		animation-delay:0.4s;
+		
+	}
+	.faza:nth-child(3){
+		animation-delay:0.6s;
+		
+	}
+	.faza:nth-child(4){
+	animation-delay:0.8s;
+		
+	}
+	.faza:nth-child(5){
+		animation-delay:1s;
+		
+	}
+		.faza:nth-child(6 ){
+		animation-delay:1.2s;
+		
+	}
+		.faza:nth-child(7){
+		animation-delay:1.4s;
+		
+	}	.faza:nth-child(8){
+		animation-delay:1.6s;
+		
+	}
+		.faza:nth-child(9){
+		animation-delay:1.8s;
+		
+	}
+		.faza:nth-child(10){
+		animation-delay:2s;
+		
+	 }
+</style>
+		</head>
+    <body class="black" >
+	<div  >
+		<ul class="hh">
+		<li class="faza">Y</li>
+		<li class="faza">O</li>
+		<li class="faza">U</li>
+		<li class="faza">S</li>
+		<li class="faza">S</li>
+		<li class="faza">E</li>
+		<li class="faza">F</li>
+		<li class="faza">.</li>
+		<li class="faza">.</li>
+		<li class="faza">.</li>
+		</ul>
+		</div>
+		</body>
+		
+		
+		<script>
+		function removeElems() {
+  let elems = document.querySelectorAll('.black');
+  for (const e of elems) {
+    setTimeout(function(o) {        //2. Receive the element in variable o
+      o.remove();                   //3. Remove the o variable
+    }, 7000, e);       
+	//1. Pass the element here
+  }
+  
+}
+
+removeElems();
+setTimeout(function(){
+        window.location.href = 'Home.html';
+    }, 7000);
+
+		</script>
+</html>
